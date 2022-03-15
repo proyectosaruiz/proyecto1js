@@ -33,13 +33,14 @@
   </aside>    
     <article class="enunciado">
       <p >
-        En el lado izquierdo hay RGB y en el lado derecho debes conseguir el color más similar. ¿Te atrevés?
+        En el lado izquierdo esta un RGB y en el lado derecho debes conseguir el color más similar. ¿Te atreves?
       </p>
     </article>
   
     </header>
     <main>
-      <div class="principal">       
+      <div class="principal">    
+        
         <div class="contenedor"> 
           <div class="cubo">
               <div class="cara"></div>
@@ -48,36 +49,37 @@
               <div class="cara"> </div>
               <div class="cara"></div>
               <div class="cara"></div>
-              <div class="cara-fondo"><p class="colorrgb">rgb(255, 87, 51)</p></div>
-              <div class="cara-fondo"><p class="colorrgb">rgb(255, 87, 51)</p></div>
-              <div class="cara-fondo"><p class="colorrgb">rgb(255, 87, 51)</p></div>
-              <div class="cara-fondo"><p class="colorrgb">rgb(255, 87, 51)</p></div>
-              <div class="cara-fondo"><p class="colorrgb">rgb(255, 87, 51)</p></div>
-              <div class="cara-fondo"><p class="colorrgb">rgb(255, 87, 51)</p></div>
-              <div class="cara-fondo"><p class="colorrgb">rgb(255, 87, 51)</p></div>
-              <div class="cara-fondo"><p class="colorrgb">rgb(255, 87, 51)</p></div>
-              <div class="cara-fondo"><p class="colorrgb">rgb(255, 87, 51)</p></div>
+              <div class="cara-fondo"><p id="rgb" style="background-color: aliceblue;"> Busca tu RGB correcto: </p></div>
+              <div class="cara-fondo"><p class="explicacion">El rojo, el verde y el azul usan 8 bits cada uno, que tienen valores enteros de 0 a 255.</p></div>
+              <div class="cara-fondo"><p class="explicacion">Dos primeros símbolos del código de color HTML representan la intensidad del color rojo</p></div>
+              <div class="cara-fondo"><p class="explicacion">Esto hace que 256 * 256 * 256 = 16777216 colores posibles.</p></div>
+              <div class="cara-fondo"><p class="explicacion">Esto hace que 256 * 256 * 256 = 16777216 colores posibles.</p></div>
+              <div class="cara-fondo"><p class="explicacion">El rojo, el verde y el azul usan 8 bits cada uno, que tienen valores enteros de 0 a 255.</p></div>
+              <div class="cara-fondo"><p class="explicacion">Esto hace que 256 * 256 * 256 = 16777216 colores posibles.</p></div>
+              <div class="cara-fondo"><p class="explicacion">Esto hace que 256 * 256 * 256 = 16777216 colores posibles.</p></div>
+              <div class="cara-fondo"><p class="explicacion">RGB ≡ Rojo, Verde, Azul</p></div>
           </div>
         </div>
         <div class="muestras">
           <div class="parte1">
           <div class="muestra1">
-          </button class ="opcion1"><p> Da Click si es el color correcto</p><button>
+         <p class ="opcion1"> Da Click si es el color correcto</p>
           </div>
           <div class="muestra2">
-          </button class ="opcion2"> <p> Da Click si es el color correcto</p><button>
+          <p class ="opcion2"> Da Click si es el color correcto</p>
           </div>
           <div class="muestra3">
-          </button class ="opcion3"> <p> Da Click si es el color correcto</p><button>
+       <p class ="opcion3"> Da Click si es el color correcto</p>
           </div>
         </div>
           <div class="marcador">
             <aside><!--el marcador y el texto del rgb, colocar donde creas oportuno -->
-              <p id="rgb" style="background-color: aliceblue;">RGB: </p>
+              
               <p id="aciertos" style="background-color: aliceblue;">ACIERTOS: </p>
               <p id="errores" style="background-color: aliceblue;">ERRORES: </p>
-             <p id="resultadoPartida"></p> 
-            </aside>
+             
+            </aside >
+            <div id="resultadoPartida"></div> 
           </div>
 
         </div>
