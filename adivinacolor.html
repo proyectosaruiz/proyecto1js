@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es,en,ga">
+<html lang="en">
   <head>
     <meta charset="utf-8" />
     <title>adivinacolor</title>
@@ -8,12 +8,9 @@
       name="juego de eleccion de colores RGB"
       content="juegos,aprendizaje, hackaboss, proyectos, javascript,css,html"
     />
+
     <meta name="author" content="Amilcar Ruiz & Miguel Alonso" />
     <link rel="stylesheet" href="estiloscss/adivinacolor.css" type="text/css" />
-    <meta
-      name="viewport"
-      content="width=device-width, user-scalable=no, initial-scale=1.0 minimum-scale=1.0, maximum-scale=1.0"
-    />
     <script src="adivinacolor.js" defer></script>
     <link
       rel="shortcut icon"
@@ -25,77 +22,107 @@
     <header>
       <aside class="encabezado">
         <article class="encabezado1">
-      <h1>Adivina el Color</h1>
-    </article>
-    <article class="encabezado2">
-      <img src="/imagenes/miami.png" alt="">
-    </article>
-  </aside>    
-    <article class="enunciado">
-      <p >
-        En el lado izquierdo esta un RGB y en el lado derecho debes conseguir el color más similar. ¿Te atreves?
-      </p>
-    </article>
-  
+          <h2>Adivina el Color</h2>
+        </article>
+        <div class="encabezado2">
+          <img src="/imagenes/miami.png" alt="" />
+        </div>
+      </aside>
+      <article class="enunciado">
+        <h3>
+          En el lado izquierdo esta un RGB y en el lado derecho debes conseguir
+          el color más similar. ¿Te atreves?
+        </h3>
+      </article>
     </header>
     <main>
-      <div class="principal">    
-        
-        <div class="contenedor"> 
+      <div class="principal">
+        <div class="contenedor">
           <div class="cubo">
-              <div class="cara"></div>
-              <div class="cara"></div>
-              <div class="cara"></div>
-              <div class="cara"> </div>
-              <div class="cara"></div>
-              <div class="cara"></div>
-              <div class="cara-fondo"><p id="rgb" class="variable" style="background-color: aliceblue;"> Busca tu RGB correcto: </p></div>
-              <div class="cara-fondo"><p class="explicacion">El rojo, el verde y el azul usan 8 bits cada uno, que tienen valores enteros de 0 a 255.</p></div>
-              <div class="cara-fondo"><p class="explicacion">Dos primeros símbolos del código de color HTML representan la intensidad del color rojo</p></div>
-              <div class="cara-fondo"><p class="explicacion">Esto hace que 256 * 256 * 256 = 16777216 colores posibles.</p></div>
-              <div class="cara-fondo"><p class="explicacion">Esto hace que 256 * 256 * 256 = 16777216 colores posibles.</p></div>
-              <div class="cara-fondo"><p class="explicacion">El rojo, el verde y el azul usan 8 bits cada uno, que tienen valores enteros de 0 a 255.</p></div>
-              <div class="cara-fondo"><p class="explicacion">Esto hace que 256 * 256 * 256 = 16777216 colores posibles.</p></div>
-              <div class="cara-fondo"><p class="explicacion">Esto hace que 256 * 256 * 256 = 16777216 colores posibles.</p></div>
-              <div class="cara-fondo"><p class="explicacion">RGB ≡ Rojo, Verde, Azul</p></div>
+            <div class="cara"></div>
+            <div class="cara"></div>
+            <div class="cara"></div>
+            <div class="cara"></div>
+            <div class="cara"></div>
+            <div class="cara"></div>
+            <div class="cara-fondo">
+              <p id="rgb" class="variable" style="background-color: aliceblue">
+                Busca tu RGB correcto:
+              </p>
+            </div>
+            <div class="cara-fondo">
+              <p class="explicacion">
+                El rojo, el verde y el azul, tienen valores enteros de 0 a 255.
+              </p>
+            </div>
+            <div class="cara-fondo">
+              <p class="explicacion">
+                Dos primeros símbolos del código representan la intensidad del
+                color rojo
+              </p>
+            </div>
+            <div class="cara-fondo">
+              <p class="explicacion">
+                Esto hace que 256 * 256 * 256 = 16777216 colores posibles.
+              </p>
+            </div>
+            <div class="cara-fondo">
+              <p class="explicacion">
+                Esto hace que 256 * 256 * 256 = 16777216 colores posibles.
+              </p>
+            </div>
+            <div class="cara-fondo">
+              <p class="explicacion">
+                El rojo, el verde y el azul tienen valores enteros de 0 a 255.
+              </p>
+            </div>
+            <div class="cara-fondo">
+              <p class="explicacion">
+                Esto hace que 256 * 256 * 256 = 16777216 colores posibles.
+              </p>
+            </div>
+            <div class="cara-fondo">
+              <p class="explicacion">
+                Esto hace que 256 * 256 * 256 = 16777216 colores posibles.
+              </p>
+            </div>
+            <div class="cara-fondo">
+              <p class="explicacion">RGB ≡ Rojo, Verde, Azul</p>
+            </div>
           </div>
         </div>
         <div class="muestras">
           <div class="parte1">
-          <div class="muestra1">
-         <p class ="opcion1"> Da Click si es el color correcto</p>
+            <div class="muestra1">
+              <p class="opcion1">Da Click si es el color correcto</p>
+            </div>
+            <div class="muestra2">
+              <p class="opcion2">Da Click si es el color correcto</p>
+            </div>
+            <div class="muestra3">
+              <p class="opcion3">Da Click si es el color correcto</p>
+            </div>
           </div>
-          <div class="muestra2">
-          <p class ="opcion2"> Da Click si es el color correcto</p>
-          </div>
-          <div class="muestra3">
-       <p class ="opcion3"> Da Click si es el color correcto</p>
-          </div>
-        </div>
           <div class="marcador">
-            <aside><!--el marcador y el texto del rgb, colocar donde creas oportuno -->
-              
-              <p id="aciertos" style="background-color: aliceblue;">ACIERTOS: </p>
-              <p id="errores" style="background-color: aliceblue;">ERRORES: </p>
-             
-            </aside >
-            <div id="resultadoPartida"></div> 
+            <aside>
+              <p id="aciertos" style="background-color: aliceblue">ACIERTOS:</p>
+              <p id="errores" style="background-color: aliceblue">ERRORES:</p>
+            </aside>
+            <div id="resultadoPartida"></div>
           </div>
-
         </div>
-  </div>  
-</div>    
+      </div>
     </main>
-    <footer>    
-      <div class="end">    
-    <div class="nombres">
+    <footer>
+      <div class="end">
+        <div class="nombres">
           <p>Miguel Alonso & Amilcar Ruiz</p>
           <p>Proyecto I 2022</p>
         </div>
         <div class="logo">
           <img src="imagenes/logo2.png" alt="" />
         </div>
-     
+      </div>
     </footer>
   </body>
 </html>

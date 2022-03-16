@@ -10,18 +10,21 @@
 }
 
 body {
-  text-align: center;
   font-family: "IndieFlower";
+  text-align: center;
+  width: 100%;
 }
 header {
-  background-image: url(../imagenes/mainfooter.jpeg);
+  background-image: url(../imagenes/imagenfooterheadernva.jpeg);
   color: white;
   border-bottom: 3px black solid;
+  width: 100vw;
 }
-h1 {
+h2 {
   font-size: 30px;
-  padding-top: 20px;
+  padding-top: 10px;
   text-align: center;
+  letter-spacing: 2px;
   text-shadow: 1px 1px 1px #919191, 1px 2px 1px #919191, 1px 2px 1px #919191,
     1px 4px 1px #919191, 1px 5px 1px #919191, 1px 6px 1px #919191;
 }
@@ -40,16 +43,24 @@ h1 {
 }
 .enunciado {
   font-size: 20px;
+  padding-bottom: 10px;
+  text-align: center;
 }
 main {
+  width: 100vw;
   background-image: url(../imagenes/main.jpeg);
   padding: 25px 30px 25px 30px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-self: center;
+  justify-content: space-around;
 }
 .principal {
   width: 100vw;
   display: grid;
   align-content: center;
-  grid-template-columns: 400px 500px;
+  grid-template-columns: 320px 600px;
   grid-auto-flow: 50px;
   justify-items: center;
   align-items: center;
@@ -154,17 +165,16 @@ main {
 
 .cubo .cara {
   position: absolute;
-  border: 5px solid black;
 }
 
 .cubo .cara-fondo {
-  background-image: url(/imagenes/imagencubo.jpeg);
+  background-image: url(../imagenes/imagenfooterheadernva.jpeg);
   position: absolute;
   border: 5px solid black;
 }
 
 #rgb {
-  background-image: url(/imagenes/imagencubo.jpeg);
+  background-image: url(../imagenes/imagenfooterheadernva.jpeg);
   font-size: 20px;
   text-align: center;
   padding-top: 70px;
@@ -176,9 +186,9 @@ main {
   text-shadow: 0px 0px 5px #fff, 0px 0px 7px #fff;
 }
 .explicacion {
-  font-size: 20px;
+  font-size: 15px;
   color: #fff;
-  padding-top: 20px;
+  padding: 50px 10px 10px 10px;
 }
 .muestras {
   display: flex;
@@ -205,14 +215,16 @@ main {
   padding: 15px;
   font-size: 20px;
   color: white;
-  box-shadow: 1px 1px 0px hsl(40, 43%, 1%), 2px 2px 0px hsl(33, 63%, 12%),
-    3px 3px 0px hsl(30, 4%, 10%), 4px 4px 0px hsl(60, 5%, 4%),
-    5px 5px 0px hsl(34, 100%, 3%);
+  letter-spacing: 2px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
 
 .muestra1:hover {
   width: 110%;
   transition: ease 2s;
+  filter: grayscale(80%);
 }
 .muestra2 {
   width: 100%;
@@ -222,14 +234,16 @@ main {
   padding: 15px;
   font-size: 20px;
   color: white;
-  box-shadow: 1px 1px 0px hsl(40, 43%, 1%), 2px 2px 0px hsl(33, 63%, 12%),
-    3px 3px 0px hsl(30, 4%, 10%), 4px 4px 0px hsl(60, 5%, 4%),
-    5px 5px 0px hsl(34, 100%, 3%);
+  letter-spacing: 2px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
 
 .muestra2:hover {
   width: 110%;
   transition: ease 2s;
+  filter: grayscale(80%);
 }
 .muestra3 {
   width: 100%;
@@ -239,23 +253,30 @@ main {
   padding: 15px;
   font-size: 20px;
   color: white;
-  box-shadow: 1px 1px 0px hsl(40, 43%, 1%), 2px 2px 0px hsl(33, 63%, 12%),
-    3px 3px 0px hsl(30, 4%, 10%), 4px 4px 0px hsl(60, 5%, 4%),
-    5px 5px 0px hsl(34, 100%, 3%);
+  letter-spacing: 2px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
 .muestra3:hover {
   width: 110%;
   transition: ease 2s;
+  filter: grayscale(80%);
 }
 
 #errores,
 #aciertos {
   font-size: 20px;
   border-radius: 10px;
-  background-image: url(../imagenes/mainfooter.jpeg);
+  background-image: url(../imagenes/imagenfooterheadernva.jpeg);
   color: white;
   padding: 10px 10px;
   margin: 20px;
+  letter-spacing: 3px;
+  font-weight: bold;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
 #resultadoPartida {
   border-radius: 10px;
@@ -271,7 +292,7 @@ main {
     0 5px 0 #ccc, 0 6px 0 transparent, 0 7px 0 transparent, 0 8px 0 transparent,
     0 9px 0 transparent, 0 10px 10px rgba(0, 0, 0, 0.6);
 }
-/* ANIMATION */
+
 @keyframes bounce {
   100% {
     top: -30px;
@@ -281,28 +302,14 @@ main {
   }
 }
 
-button {
-  padding: 20px 35px;
-  font-size: 20px;
-  font-family: "IndieFlower";
-  text-align: center;
-  border-radius: 10px;
-  box-shadow: 0 5px #666;
-  transform: translateY(4px);
-  background-color: rgb(53, 42, 42);
-}
-
 footer {
+  background-image: url(../imagenes/imagenfooterheadernva.jpeg);
   color: white;
-  font-size: 15px;
   border-top: 3px black solid;
   width: 100vw;
-  height: 15vh;
-
-  background-image: url(../imagenes/mainfooter.jpeg);
 }
-
 .end {
+  padding: 25px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -321,76 +328,56 @@ img {
 
 @media screen and (max-width: 720px) {
   header {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    position: sticky;
-    top: 0px;
-    font-weight: bold;
-    z-index: 1;
-    background-image: url(../imagenes/mainfooter.jpeg);
+    padding: 30px 0px 30px 0px;
   }
-  h1 {
-    font-size: 65px;
-    padding: 25px;
+  h2 {
+    margin-top: 25px;
+    font-size: 35px;
   }
-  .enunciado {
-    font-size: 40px;
-    padding: 25px;
+
+  .encabezado2 {
+    margin-top: 20px;
+    width: 10vw;
   }
-  main {
-    padding: 50px 10px;
+
+  h3 {
+    font-size: 25p;
+    padding: 20px;
   }
   .principal {
+    width: 100vw;
+    height: 70vh;
     display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: center;
-    top: 0px;
-    font-weight: bold;
-    z-index: 2;
-    font-size: 15px;
-    padding: 40vw 5vh;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-self: center;
+    justify-content: space-between;
   }
   .contenedor {
     display: block;
     overflow: hidden;
-    width: 40vw;
-    padding-top: 80px;
+    width: 55vw;
+    height: 30vh;
+    margin: 20px;
+    padding: 50px;
   }
-
-  .muestra {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  .muestra1,
-  .muestra2 {
-    margin-top: 35px;
-  }
-
   .muestras {
-    font-size: 30px;
+    margin: 20px;
   }
   .end {
-    font-size: 25px;
-    padding: 20px;
-  }
-  .logo {
-    padding-top: 15px;
+    margin: 30px 30px 30px;
+    font-size: 20px;
   }
   img {
-    width: 20vw;
+    width: 10vw;
+    margin: auto;
   }
 }
-
 @media screen and (max-width: 420px) {
   header {
     width: 100%;
     display: flex;
     flex-direction: column;
-    position: sticky;
     top: 0px;
     font-weight: bold;
     z-index: 1;
@@ -442,12 +429,11 @@ img {
   }
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1280px) {
   header {
     width: 100%;
     display: flex;
     flex-direction: column;
-    position: sticky;
     top: 0px;
     font-weight: bold;
     z-index: 1;
@@ -459,9 +445,25 @@ img {
     display: block;
     overflow: hidden;
     width: 40vw;
-    padding-top: 80px;
+    padding-top: 40px;
   }
-  .principal {
-    padding: 30px;
+  footer {
+    padding-bottom: 20px;
+  }
+}
+@media screen and (max-width: 1240px) {
+  header {
+    width: 100%;
+    margin: 0px;
+    padding: 0%;
+  }
+  main {
+    padding: 0%;
+  }
+  footer {
+    padding-top: 5px;
+  }
+  .end {
+    padding: 0%;
   }
 }
