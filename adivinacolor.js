@@ -20,19 +20,48 @@ muestra3.addEventListener("click", () => {
   comprobador(2);
 });
 
+const iniciaPartida = document.querySelector("#iniciaPartida");
+
+iniciaPartida.addEventListener("click", () => {
+  nuevaPartida();
+});
+
 //let colorSeleccionado;
 //Función que genera un color
 function generaColores() {
   let colores = [];
-  for (let i = 0; i < 3; i++) {
-    colores[i] = [
-      (Math.random() * 256).toFixed(0),
-      (Math.random() * 256).toFixed(0),
-      (Math.random() * 256).toFixed(0),
-    ];
-  }
+  // for (let i = 0; i < 3; i++) {
+  //   colores[i] = [
+  //     (Math.random() * 256).toFixed(0),
+  //     (Math.random() * 256).toFixed(0),
+  //     (Math.random() * 256).toFixed(0),
+  //   ];
+  // }
+  colores[0] = [
+    Math.floor(Math.random() * 256),
+    Math.floor(Math.random() * 256),
+    Math.floor(Math.random() * 256),
+  ];
+
+  colores[1] = [
+    colores[0][0] + Math.floor(Math.random() * 30),
+    colores[0][1] + Math.floor(Math.random() * 30),
+    colores[0][2] + Math.floor(Math.random() * 30),
+  ];
+
+  colores[2] = [
+    colores[0][0] + Math.floor(Math.random() * -30),
+    colores[0][1] + Math.floor(Math.random() * -30),
+    colores[0][2] + Math.floor(Math.random() * -30),
+  ];
+  console.log(colores[0]);
+  console.log(colores[1]);
+
+  console.log(colores[2]);
+
   return colores;
 }
+
 //Función compueba los colores
 function comprobador(colorSeleccionado) {
   if (colorSeleccionado === colorCorrecto) {
@@ -42,7 +71,6 @@ function comprobador(colorSeleccionado) {
     if (contadorAciertos === 3) {
       const resultado = document.querySelector("#resultadoPartida");
       resultado.textContent = "YOU WIN";
-      nuevaPartida();
     }
   } else {
     contadorErrores++;
@@ -53,32 +81,31 @@ function comprobador(colorSeleccionado) {
     if (contadorErrores === 3) {
       const resultado = document.querySelector("#resultadoPartida");
       resultado.textContent = "YOU LOSE";
-      nuevaPartida();
     }
   }
   nuevoIntento();
 }
 
-function simulador() {
-  while (contadorAciertos < 3 && contadorErrores < 3) {
-    colores = generaColores();
-    colorCorrecto = (Math.random() * 2).toFixed(0);
+// function simulador() {
+//   while (contadorAciertos < 3 && contadorErrores < 3) {
+//     colores = generaColores();
+//     colorCorrecto = (Math.random() * 2).toFixed(0);
 
-    console.log("RGB:" + colores[colorCorrecto]);
-    console.log(
-      "opciones a elegir \n " +
-        colores[0] +
-        "\n" +
-        colores[1] +
-        "\n" +
-        colores[2]
-    );
+//     console.log("RGB:" + colores[colorCorrecto]);
+//     console.log(
+//       "opciones a elegir \n " +
+//         colores[0] +
+//         "\n" +
+//         colores[1] +
+//         "\n" +
+//         colores[2]
+//     );
 
-    //colorSeleccionado = click recibido(0,1 o 2)
+//     //colorSeleccionado = click recibido(0,1 o 2)
 
-    comprobador(prompt("elege color")); //es solo comprobador
-  }
-}
+//     comprobador(prompt("elege color")); //es solo comprobador
+//   }
+// }
 //simulador();
 
 function pintaColores(colores, colorCorrecto) {
@@ -105,6 +132,11 @@ function nuevoIntento() {
 function nuevaPartida() {
   contadorErrores = 0;
   contadorAciertos = 0;
+  const marcadorAcierto = document.querySelector("#aciertos");
+  marcadorAcierto.textContent = "Aciertos: " + contadorAciertos;
+
+  const marcadorError = document.querySelector("#errores");
+  marcadorError.textContent = "Errores: " + contadorErrores;
   nuevoIntento();
 }
 
