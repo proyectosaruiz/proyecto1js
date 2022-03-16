@@ -1,30 +1,36 @@
-("use strict");
+"use strict";
 let contadorAciertos;
 let contadorErrores;
 let colorCorrecto;
-let colores;
+//let colores;
 
 const muestra1 = document.querySelector(".muestra1");
 
 muestra1.addEventListener("click", () => {
-  comprobador(0);
+  if (contadorAciertos < 3 && contadorErrores < 3) {
+    comprobador(0);
+  }
 });
 const muestra2 = document.querySelector(".muestra2");
 
 muestra2.addEventListener("click", () => {
-  comprobador(1);
+  if (contadorAciertos < 3 && contadorErrores < 3) {
+    comprobador(1);
+  }
 });
 const muestra3 = document.querySelector(".muestra3");
 
 muestra3.addEventListener("click", () => {
-  comprobador(2);
+  if (contadorAciertos < 3 && contadorErrores < 3) {
+    comprobador(2);
+  }
 });
 
 const iniciaPartida = document.querySelector("#iniciaPartida");
 
-iniciaPartida.addEventListener("click", () => {
-  nuevaPartida();
-});
+// iniciaPartida.addEventListener("click", () => {FALTA EL BOTON NUEVA PARTIDA
+//   nuevaPartida();
+// });
 
 //let colorSeleccionado;
 //Función que genera un color
@@ -44,15 +50,15 @@ function generaColores() {
   ];
 
   colores[1] = [
-    colores[0][0] + Math.floor(Math.random() * 30),
-    colores[0][1] + Math.floor(Math.random() * 30),
-    colores[0][2] + Math.floor(Math.random() * 30),
+    colores[0][0] + 20 + Math.floor(Math.random() * 50),
+    colores[0][1] + 20 + Math.floor(Math.random() * 50),
+    colores[0][2] + 20 + Math.floor(Math.random() * 50),
   ];
 
   colores[2] = [
-    colores[0][0] + Math.floor(Math.random() * -30),
-    colores[0][1] + Math.floor(Math.random() * -30),
-    colores[0][2] + Math.floor(Math.random() * -30),
+    colores[0][0] - 20 + Math.floor(Math.random() * -50),
+    colores[0][1] - 20 + Math.floor(Math.random() * -50),
+    colores[0][2] - 20 + Math.floor(Math.random() * -50),
   ];
   console.log(colores[0]);
   console.log(colores[1]);
@@ -83,6 +89,8 @@ function comprobador(colorSeleccionado) {
       resultado.textContent = "YOU LOSE";
     }
   }
+  // console.log(contadorAciertos);
+  // console.log(contadorErrores);
   nuevoIntento();
 }
 
