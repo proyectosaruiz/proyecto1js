@@ -1,4 +1,6 @@
 ("use strict");
+
+("use strict");
 let contadorAciertos;
 let contadorErrores;
 let colorCorrecto;

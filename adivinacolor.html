@@ -8,10 +8,10 @@
       name="juego de eleccion de colores RGB"
       content="juegos,aprendizaje, hackaboss, proyectos, javascript,css,html"
     />
-
     <meta name="author" content="Amilcar Ruiz & Miguel Alonso" />
     <link rel="stylesheet" href="estiloscss/adivinacolor.css" type="text/css" />
     <script src="adivinacolor.js" defer></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       rel="shortcut icon"
       type="image/x-icon"
@@ -20,98 +20,37 @@
   </head>
   <body>
     <header>
-      <aside class="encabezado">
-        <article class="encabezado1">
-          <h2>Adivina el Color</h2>
-        </article>
-        <div class="encabezado2">
-          <img src="/imagenes/miami.png" alt="" />
-        </div>
-      </aside>
-      <article class="enunciado">
-        <h3>
+      <aside>
+        <h1>Adivina el Color</h1>
+        <h2>
           En el lado izquierdo esta un RGB y en el lado derecho debes conseguir
           el color más similar. ¿Te atreves?
-        </h3>
-      </article>
+        </h2>
+      </aside>
     </header>
     <main>
-      <div class="principal">
-        <div class="contenedor">
-          <div class="cubo">
-            <div class="cara"></div>
-            <div class="cara"></div>
-            <div class="cara"></div>
-            <div class="cara"></div>
-            <div class="cara"></div>
-            <div class="cara"></div>
-            <div class="cara-fondo">
-              <p id="rgb" class="variable" style="background-color: aliceblue">
-                Busca tu RGB correcto:
-              </p>
-            </div>
-            <div class="cara-fondo">
-              <p class="explicacion">
-                El rojo, el verde y el azul, tienen valores enteros de 0 a 255.
-              </p>
-            </div>
-            <div class="cara-fondo">
-              <p class="explicacion">
-                Dos primeros símbolos del código representan la intensidad del
-                color rojo
-              </p>
-            </div>
-            <div class="cara-fondo">
-              <p class="explicacion">
-                Esto hace que 256 * 256 * 256 = 16777216 colores posibles.
-              </p>
-            </div>
-            <div class="cara-fondo">
-              <p class="explicacion">
-                Esto hace que 256 * 256 * 256 = 16777216 colores posibles.
-              </p>
-            </div>
-            <div class="cara-fondo">
-              <p class="explicacion">
-                El rojo, el verde y el azul tienen valores enteros de 0 a 255.
-              </p>
-            </div>
-            <div class="cara-fondo">
-              <p class="explicacion">
-                Esto hace que 256 * 256 * 256 = 16777216 colores posibles.
-              </p>
-            </div>
-            <div class="cara-fondo">
-              <p class="explicacion">
-                Esto hace que 256 * 256 * 256 = 16777216 colores posibles.
-              </p>
-            </div>
-            <div class="cara-fondo">
-              <p class="explicacion">RGB ≡ Rojo, Verde, Azul</p>
-            </div>
-          </div>
-        </div>
+      <section class="principal">
+        <aside class="iniciar">
+          <div><button>Iniciar Partida</button></div>
+          <div class="colorcompara"><p id="rgb"></p></div>
+        </aside>
         <div class="muestras">
-          <div class="parte1">
-            <div class="muestra1">
-              <p class="opcion1">Da Click si es el color correcto</p>
-            </div>
-            <div class="muestra2">
-              <p class="opcion2">Da Click si es el color correcto</p>
-            </div>
-            <div class="muestra3">
-              <p class="opcion3">Da Click si es el color correcto</p>
-            </div>
+          <div class="muestra1">
+            <p class="opcion1">Da Click si es el color correcto</p>
           </div>
-          <div class="marcador">
-            <aside>
-              <p id="aciertos" style="background-color: aliceblue">ACIERTOS:</p>
-              <p id="errores" style="background-color: aliceblue">ERRORES:</p>
-            </aside>
-            <div id="resultadoPartida"></div>
+          <div class="muestra2">
+            <p class="opcion2">Da Click si es el color correcto</p>
+          </div>
+          <div class="muestra3">
+            <p class="opcion3">Da Click si es el color correcto</p>
           </div>
         </div>
-      </div>
+        <aside class="marcador">
+          <p id="aciertos" style="background-color: aliceblue">ACIERTOS:</p>
+          <p id="errores" style="background-color: aliceblue">ERRORES:</p>
+          <p id="resultadoPartida"></p>
+        </aside>
+      </section>
     </main>
     <footer>
       <div class="end">
