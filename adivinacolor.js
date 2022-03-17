@@ -1,10 +1,5 @@
-<<<<<<< HEAD
-("use strict");
-
-("use strict");
-=======
 "use strict";
->>>>>>> b39b6379055c00d13598c0f78ea4be9f30f627ce
+
 let contadorAciertos;
 let contadorErrores;
 let colorCorrecto;
@@ -32,11 +27,11 @@ muestra3.addEventListener("click", () => {
   }
 });
 
-const iniciaPartida = document.querySelector("#iniciaPartida");
+const iniciaPartida = document.querySelector(".iniciarPartida");
 
-// iniciaPartida.addEventListener("click", () => {FALTA EL BOTON NUEVA PARTIDA
-//   nuevaPartida();
-// });
+iniciaPartida.addEventListener("click", () => {
+  nuevaPartida();
+});
 
 //let colorSeleccionado;
 //Función que genera un color
@@ -151,6 +146,8 @@ function nuevaPartida() {
 
   const marcadorError = document.querySelector("#errores");
   marcadorError.textContent = "Errores: " + contadorErrores;
+  const resultado = document.querySelector("#resultadoPartida");
+  resultado.textContent = "";
   nuevoIntento();
 }
 
