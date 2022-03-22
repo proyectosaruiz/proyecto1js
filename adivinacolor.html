@@ -22,35 +22,40 @@
     <header>
       <aside>
         <h1>Adivina el Color</h1>
-        <h2>
-          En el lado izquierdo esta un RGB y en el lado derecho debes conseguir
-          el color más similar. ¿Te atreves?
-        </h2>
+        <h2>Relaciona el código RGB, con el color adecuado, ¿Te atreves?</h2>
       </aside>
     </header>
     <main>
-      <section class="principal">
-        <aside class="iniciar">
-          <div><button class="iniciarPartida">Iniciar Partida</button></div>
+      <div class="principal">
+        <div class="iniciar">
+          <div class="boton">
+            <button class="iniciarPartida">Iniciar Partida</button>
+          </div>
           <div class="colorcompara"><p id="rgb"></p></div>
-        </aside>
-        <div class="muestras">
+        </div>
+        <aside class="muestras">
           <div class="muestra1">
-            <p class="opcion1">Da Click si es el color correcto</p>
+            <p class="opcion1">Da Click, si es el color correcto</p>
           </div>
           <div class="muestra2">
-            <p class="opcion2">Da Click si es el color correcto</p>
+            <p class="opcion2">Da Click, si es el color correcto</p>
           </div>
           <div class="muestra3">
-            <p class="opcion3">Da Click si es el color correcto</p>
+            <p class="opcion3">Da Click, si es el color correcto</p>
           </div>
-        </div>
-        <aside class="marcador">
-          <p id="aciertos" style="background-color: aliceblue">ACIERTOS:</p>
-          <p id="errores" style="background-color: aliceblue">ERRORES:</p>
-          <p id="resultadoPartida"></p>
         </aside>
-      </section>
+        <aside class="marcador">
+          <div class="acierto">
+            <p id="aciertos" style="background-color: aliceblue">ACIERTOS:</p>
+          </div>
+          <div class="resultados">
+            <p id="resultadoPartida"></p>
+          </div>
+          <div class="acierto">
+            <p id="errores" style="background-color: aliceblue">ERRORES:</p>
+          </div>
+        </aside>
+      </div>
     </main>
     <footer>
       <div class="end">
