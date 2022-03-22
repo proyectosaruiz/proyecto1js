@@ -319,10 +319,9 @@ img {
   padding-top: 10px;
 }
 
-/* USAMOS LA MEDIA DE LAS MEDIDAS ESTANDAR DE TABLET Y 
-MOVILES PARA QUE SE VEA MEJOR EL RESPONSIVE, CAMBIANDO ALGUNOS
-CONTENEDORES EN FLEX ADAPTANDO MEJOR LA VISIBILIDAD */
-@media screen and (max-width: 1200px) {
+/* USAMOS @media screen PARA LAS MEDIDAS ESTANDAR DE TABLET Y 
+MOVILES, CAMBIANDO ALGUNOS CONTENEDORES EN FLEX ADAPTANDO MEJOR LA VISTA */
+@media screen and (max-width: 1100px) {
   body {
     display: flex;
     flex-direction: row;
@@ -354,8 +353,13 @@ CONTENEDORES EN FLEX ADAPTANDO MEJOR LA VISIBILIDAD */
     justify-content: center;
   }
   .iniciar {
-    padding-top: 100px;
+    margin-top: 30px;
+    padding-top: 150px;
+    display: flex;
     flex-direction: row;
+    flex-wrap: nowrap;
+    align-self: center;
+    justify-content: space-around;
   }
   button {
     font-size: 2em;
@@ -371,24 +375,29 @@ CONTENEDORES EN FLEX ADAPTANDO MEJOR LA VISIBILIDAD */
     justify-content: center;
   }
   .muestra1 {
-    font-size: 0.8em;
+    font-size: 1em;
     padding: 10px;
   }
   .muestra2 {
-    font-size: 0.8em;
+    font-size: 1em;
     padding: 10px;
   }
   .muestra3 {
-    font-size: 0.8em;
+    font-size: 1em;
     padding: 10px;
   }
   #rgb {
-    font-size: 3em;
+    font-size: 2em;
   }
   .marcador {
-    margin-top: 45px;
+    margin-top: 20px;
     font-size: 1.8em;
     padding: 25px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-self: center;
+    justify-content: space-around;
   }
   #aciertos,
   #errores {
@@ -408,8 +417,11 @@ CONTENEDORES EN FLEX ADAPTANDO MEJOR LA VISIBILIDAD */
     font-size: 1em;
     padding: 0px;
   }
+  #resultadoPartida {
+    font-size: 1.5em;
+  }
 }
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 900px) {
   body {
     display: grid;
     grid-template-areas: "header" "main" "footer";
@@ -496,7 +508,7 @@ CONTENEDORES EN FLEX ADAPTANDO MEJOR LA VISIBILIDAD */
     padding: 0px;
   }
 }
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 600px) {
   header {
     display: flex;
     flex-direction: column;
