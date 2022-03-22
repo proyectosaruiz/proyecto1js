@@ -79,6 +79,7 @@ button {
   cursor: pointer;
   position: relative;
   padding: 1rem 1rem;
+  margin-bottom: 3rem;
   border-radius: 3.75rem;
   line-height: 2.5rem;
   font-size: 2rem;
