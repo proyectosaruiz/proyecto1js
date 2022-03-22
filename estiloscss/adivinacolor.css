@@ -10,7 +10,7 @@
   font-family: "Play-Regular";
   src: url(IPlay/Play-Regular.ttf);
 }
-/* Nuestro body lo hacemos con gird para mayor exactitud*/
+/* Nuestro body lo hacemos con grid para mayor exactitud*/
 body {
   margin: auto;
   font-family: "Play-Regular";
@@ -438,7 +438,6 @@ MOVILES, CAMBIANDO ALGUNOS CONTENEDORES EN FLEX ADAPTANDO MEJOR LA VISTA */
     font-size: 2em;
   }
   main {
-    grid-area: main;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -448,16 +447,23 @@ MOVILES, CAMBIANDO ALGUNOS CONTENEDORES EN FLEX ADAPTANDO MEJOR LA VISTA */
 
   .iniciar {
     margin-bottom: 15px;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-self: center;
+    justify-content: center;
   }
   button {
     font-size: 2em;
-    padding: 8px;
+    padding: 10px;
     margin: auto;
   }
   #rgb {
     margin-left: 15px;
+    padding-top: 20px;
+    font-size: 2em;
   }
   .muestras {
+    margin-top: 20px;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -478,12 +484,9 @@ MOVILES, CAMBIANDO ALGUNOS CONTENEDORES EN FLEX ADAPTANDO MEJOR LA VISTA */
     font-size: 2em;
     padding: 10px;
   }
-
-  #rgb {
-    font-size: 1.8em;
-  }
   .marcador {
-    font-size: 1.5em;
+    margin-top: 30px;
+    font-size: 2em;
     padding: 2px;
     display: flex;
     flex-direction: row;
@@ -508,7 +511,7 @@ MOVILES, CAMBIANDO ALGUNOS CONTENEDORES EN FLEX ADAPTANDO MEJOR LA VISTA */
     padding: 0px;
   }
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 760px) {
   header {
     display: flex;
     flex-direction: column;
@@ -564,6 +567,7 @@ MOVILES, CAMBIANDO ALGUNOS CONTENEDORES EN FLEX ADAPTANDO MEJOR LA VISTA */
   }
   #rgb {
     font-size: 1.5em;
+    padding: 2px;
   }
   #aciertos,
   #errores {
@@ -603,7 +607,7 @@ MOVILES, CAMBIANDO ALGUNOS CONTENEDORES EN FLEX ADAPTANDO MEJOR LA VISTA */
   }
 }
 
-@media screen and (max-width: 340px) {
+@media screen and (max-width: 500px) {
   body {
     display: flex;
     flex-direction: row;
@@ -617,12 +621,12 @@ MOVILES, CAMBIANDO ALGUNOS CONTENEDORES EN FLEX ADAPTANDO MEJOR LA VISTA */
   h1 {
     font-size: 1.5em;
     margin: 0px;
-    padding-bottom: 1px;
+    padding-bottom: 10px;
   }
   h2 {
     font-size: 1.2em;
     margin: 0px;
-    padding: 0px;
+    padding-bottom: 10px;
   }
   .principal {
     display: flex;
@@ -637,16 +641,16 @@ MOVILES, CAMBIANDO ALGUNOS CONTENEDORES EN FLEX ADAPTANDO MEJOR LA VISTA */
 
   .boton {
     margin: 5px auto;
-    padding-bottom: 10px;
   }
   button {
-    font-size: 2em;
+    font-size: 1.5em;
+    padding: 2px;
   }
 
   .muestras {
     margin: 0px;
-    padding-bottom: 10px;
-    font-size: 0.8em;
+    padding-top: 40px;
+
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -655,18 +659,193 @@ MOVILES, CAMBIANDO ALGUNOS CONTENEDORES EN FLEX ADAPTANDO MEJOR LA VISTA */
   }
   .muestra1 {
     margin-right: 5px;
+    font-size: 1em;
   }
   .muestra2 {
     margin-right: 5px;
+    font-size: 1em;
+  }
+  .muestra3 {
+    font-size: 1em;
   }
   .marcador {
-    margin: 0px;
-    padding: 0px;
+    padding-top: 40px;
   }
   footer {
     display: none;
   }
   #rgb {
+    font-size: 1.5em;
+    padding-top: 40px;
+  }
+  #aciertos,
+  #errores {
+    padding-bottom: 20px;
+    margin: 0%;
+    font-size: 1.2em;
+  }
+}
+@media screen and (max-width: 400px) {
+  body {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-self: center;
+    justify-content: center;
+  }
+  header {
+    padding: 10px;
+  }
+  h1 {
+    font-size: 1.5em;
+    margin: 0px;
+    padding-bottom: 10px;
+  }
+  h2 {
+    font-size: 1.2em;
+    margin: 0px;
+    padding-bottom: 10px;
+  }
+  .principal {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-self: center;
+    justify-content: center;
+    font-size: 0.8em;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  .boton {
+    margin: 5px auto;
+  }
+  button {
+    font-size: 1.5em;
+    padding: 2px;
+  }
+
+  .muestras {
+    margin: 0px;
+    padding-top: 40px;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-self: center;
+    justify-content: space-around;
+  }
+  .muestra1 {
+    margin-right: 5px;
     font-size: 1em;
+  }
+  .muestra2 {
+    margin-right: 5px;
+    font-size: 1em;
+  }
+  .muestra3 {
+    font-size: 1em;
+  }
+  .marcador {
+    padding-top: 40px;
+  }
+  footer {
+    display: none;
+  }
+  #rgb {
+    font-size: 1.5em;
+    padding-top: 40px;
+  }
+  #aciertos,
+  #errores {
+    padding-bottom: 20px;
+    margin: 0%;
+    font-size: 1.2em;
+  }
+}
+@media screen and (max-width: 360px) {
+  body {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-self: center;
+    justify-content: center;
+  }
+  header {
+    padding: 10px;
+  }
+  h1 {
+    font-size: 1.5em;
+    margin: 0px;
+    padding-bottom: 10px;
+  }
+  h2 {
+    font-size: 1.2em;
+    margin: 0px;
+    padding-bottom: 10px;
+  }
+  main {
+    margin: 0px;
+    padding: 0px;
+  }
+  .principal {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-self: center;
+    justify-content: center;
+    font-size: 0.8em;
+    margin: 0px;
+    padding: 0px;
+  }
+  .marcador {
+    margin: 0px;
+    padding: 0px;
+  }
+  .boton {
+    margin: 5px auto;
+  }
+  button {
+    font-size: 1.5em;
+    padding: 2px;
+  }
+
+  .muestras {
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-self: center;
+    justify-content: space-around;
+  }
+  .muestra1 {
+    margin-right: 5px;
+    font-size: 1em;
+  }
+  .muestra2 {
+    margin-right: 5px;
+    font-size: 1em;
+  }
+  .muestra3 {
+    font-size: 1em;
+  }
+
+  footer {
+    display: none;
+  }
+  #rgb {
+    font-size: 1.5em;
+    margin: 0px;
+    padding: 0px;
+  }
+  #aciertos,
+  #errores {
+    padding-bottom: 20px;
+    margin: 0%;
+    font-size: 1em;
+  }
+  #resultadoPartida {
+    font-size: 1.5em;
   }
 }
